@@ -23,3 +23,12 @@ vectorstore = FAISS.from_documents(chunks, embeddings)
 
 retriever = vectorstore.as_retriever(search_type="similarity_score_threshold",
                                      search_kwargs={"score_threshold":0.3, "k": 4})
+def resposta(mensagem):
+    docs = retriever.invoke(mensagem)
+    contexto = "\n\n".join(d.page_content for d in docs) if docs else ""
+    
+    saida = llm.invoke([
+        SystemMessage(content=memoria + "\n\n## Contexto FETEPS:\n" + contexto),
+        HumanMessage(content=mensagem)
+    ])
+  
