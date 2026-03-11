@@ -25,12 +25,6 @@ Rate = "+3%"
 voicefile = "RebeccaVoice.mp3"
 q = queue.Queue()
 
-try:
-    model = Model("ModelSTT/vosk-model-small-pt-0.3")
-    STT = KaldiRecognizer(model, 16000)
-except Exception as e:
-    print(e)
-
 #Funções
 def limparterm():
     if platform.system() == "Windows":
@@ -69,12 +63,12 @@ def resposta(mensagem):
     return saida.model_dump()
 
 def lerMem():
-    with open("memoria.json","r") as arquivo:
+    with open("RebeccaMain/memoria.json","r",encoding="utf-8") as arquivo:
        return arquivo.read()
 
 # Configurando o RAG
 try:
-    infos= Path("content/FETEPS.pdf")
+    infos= Path("RebeccaMain/content/FETEPS.pdf")
     loader = PyMuPDFLoader(str(infos))
     pdf = loader.load()
     splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=30)
@@ -92,7 +86,13 @@ except Exception as e:
     print(e)
     restart()
 
-
+#Configurando STT
+try:
+    model = Model("RebeccaMain/ModelSTT/vosk-model-small-pt-0.3")
+    STT = KaldiRecognizer(model, 16000)
+except Exception as e:
+    print(e)
+    restart()
 
 #Configurando o Agente Principal
 try:
