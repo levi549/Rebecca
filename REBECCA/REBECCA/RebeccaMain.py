@@ -9,6 +9,13 @@ from ApiKey import api
 import queue
 import sounddevice as sd
 from vosk import Model, KaldiRecognizer
+from langchain_community.document_loaders import PyMuPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
+from langchain_community.vectorstores import FAISS
+import sys
+import platform
+from pathlib import Path
 
 #Variaveis Globais Uteis
 apikey = api
@@ -26,6 +33,16 @@ except Exception as e:
 STT = KaldiRecognizer(model, 16000)
 
 #Funções
+def limparterm():
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
+
+def restart():
+    sys.stdout.flush()
+    sys.stderr.flush()
+    os.execv(sys.executable, ['python'] + sys.argv)
 
 def callback(indata, frames, time, status):
     q.put(bytes(indata))
@@ -44,21 +61,39 @@ async def texttospeech(text):
     playsound(voicefile)
 
 def resposta(mensagem):
-    saida=llm.invoke([
-        SystemMessage(content=memoria),
+    docs = retriever.invoke(mensagem)
+    contexto = "\n\n".join(d.page_content for d in docs) if docs else ""
+    saida = llm.invoke([
+        SystemMessage(content=memoria + "\n\n## Contexto FETEPS:\n" + contexto),
         HumanMessage(content=mensagem)
     ])
-    a = f'User:{mensagem}'
-    try:
-        with open("memoria.json","a") as arquivo:
-            arquivo.write('\n{"'+a+'"}')
-    except:
-        print("memoria atualizada")
     return saida.model_dump()
 
 def lerMem():
     with open("memoria.json","r") as arquivo:
        return arquivo.read()
+
+# Configurando o RAG
+try:
+    infos= Path("content/FETEPS.pdf")
+    loader = PyMuPDFLoader(str(infos))
+    pdf = loader.load()
+    splitter = RecursiveCharacterTextSplitter(chunk_size=300, chunk_overlap=30)
+    chunks = splitter.split_documents(pdf)
+    embeddings = GoogleGenerativeAIEmbeddings(
+        model="models/gemini-embedding-001",
+        google_api_key=api
+    )
+    vectorstore = FAISS.from_documents(chunks, embeddings)
+
+    retriever = vectorstore.as_retriever(search_type="similarity_score_threshold",
+                                        search_kwargs={"score_threshold":0.3, "k": 4})
+except Exception as e:
+    limparterm()
+    print(e)
+    restart()
+
+
 
 #Configurando o Agente Principal
 try:
