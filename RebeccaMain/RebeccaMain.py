@@ -27,10 +27,9 @@ q = queue.Queue()
 
 try:
     model = Model("ModelSTT/vosk-model-small-pt-0.3")
+    STT = KaldiRecognizer(model, 16000)
 except Exception as e:
     print(e)
-
-STT = KaldiRecognizer(model, 16000)
 
 #Funções
 def limparterm():
