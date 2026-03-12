@@ -120,28 +120,40 @@ Follow these steps to get your local environment set up:
    ```CMD
    cd /Directory_Path
     ```
+   <br>
+   
+ 3. **Running the Project**
+    To start the application, run the following command in your terminal:
 
+    ```CMD
+     uv run RebeccaMain/RebeccaMain.py
+    ```
 
-
+<br>
 <!-- USAGE EXAMPLES -->
-## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+## ⚙️ Configuration & Usage
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+To use this project, you will need a **Gemini API Key**. Follow the steps below to get yours and configure the application:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+1. Go to [Google AI Studio](https://aistudio.google.com/app/api-keys).
+2. Sign in with your Google account.
+3. Click on the **"Create API key"** button.
+4. Copy the generated token.
+5. Open the `RebeccaMain/Apikey.py` file in your code editor.
+6. Replace `Your_ApiKey` with the API key you just copied.
+
+> **⚠️ Security Warning:** Never commit your API key directly to GitHub! Make sure that `RebeccaMain/Apikey.py` is added to your `.gitignore` file before pushing any changes.
 
 
-
-
+<br>
 <!-- CONTRIBUTING -->
-## Contributing
+
+## 🤝 Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -150,12 +162,9 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 ### Top contributors:
-
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
+<a href="https://github.com/levi549/Rebecca/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=levi549/Rebecca" />
 </a>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
