@@ -173,8 +173,6 @@ Project Link: [https://github.com/levi549/Rebecca]((https://github.com/levi549/R
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 We would like to express our deepest gratitude to the people and teams who made this project possible:
 
 * **[Professor Rafael Cruz](https://www.linkedin.com/in/rafael-cruz-73917212)** * **[Professor Tiago Jesus](https://www.linkedin.com/in/tiagojsouza)** * **Centro Paula Souza (CPS) Robotics Team** ```
