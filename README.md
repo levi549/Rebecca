@@ -30,131 +30,96 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="[https://github.com/othneildrew/Best-README-Template](https://github.com/levi549/Rebecca/tree/main)">
+    <img src="images/robo.png" alt="Logo" width="110" height="110">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Rebecca - AI Agent for fairs and events!</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Explore Rebecca's documentation:
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://docs.google.com/document/d/1gp94SfoiHp7q1uv4GKJa6vzyX8j3ONkQ-zVp_nWaJd4/edit?usp=drivesdk"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://wa.me/5519992236931?text=Hi!%20I'd%20like%20to%20report%20a%20bug%20or%20share%20a%20suggestion%20to%20improve%20the%20project.">Report Bug</a>
     &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
 
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Rebecca is an AI agent designed to interact, assist, and promote content at tech fairs and events. Powered by an advanced learning model, she assimilates and stores comprehensive information about the event and its hosting institutions, allowing her to answer visitor questions accurately and naturally.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Beyond just a conversational assistant, Rebecca is an active promoter. By moving autonomously throughout the venue, she acts as a dynamic advertising platform, broadcasting announcements through speech and displaying promotional content directly on her physical structure.
 
 
+
+
+
+<br>
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Essential technologies and hardware components that bring Rebecca to life:
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![Python][Python-shield]][Python-url]
+* [![JSON][JSON-shield]][JSON-url]
+* [![Raspberry Pi][Raspberry-shield]][Raspberry-url]
+* [![Docker][Docker-shield]][Docker-url]
+* [![Google Cloud][GCP-shield]][GCP-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Follow these instructions to get a local copy of Rebecca up and running on your PC for development and testing.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+To run Rebecca locally, you will need Python installed on your machine. We also use `uv` for lightning-fast package management.
+
+* **Python**
+  Download and install Python from the official website: [python.org/downloads](https://www.python.org/downloads/)
+  > **⚠️ IMPORTANT FOR WINDOWS USERS:** During the installation, make sure to check the box **"Add Python to PATH"** at the bottom of the installer window. This is required so you can use the `pip` command directly in your terminal.
+
+* **uv (Package Manager)**
+  Once Python is installed and added to your PATH, install `uv` by running the following command in your terminal:
+  
+  **Windows (CMD/PowerShell):**
+  ```cmd
+  pip install uv
+<br>
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+Follow these steps to get your local environment set up:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+1. **Clone the repo or download the ZIP**
+   You can either download the repository as a ZIP file and extract it, or clone it using Git:
+   
+   ```CMD
+   
+   git clone [https://github.com/levi549/Rebecca.git](https://github.com/levi549/Rebecca.git)
+<br>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+2. **Navigate to the project directory**
+   Open your terminal (CMD or PowerShell) and go to the folder where you extracted or cloned the project:
+   
+   ```CMD
+   cd /Directory_Path
+    ```
 
 
 
@@ -167,22 +132,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
@@ -274,8 +223,19 @@ Use this space to list resources you find helpful and would like to give credit 
 [Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
 [Svelte-url]: https://svelte.dev/
 [Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+
 [Laravel-url]: https://laravel.com
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Python-shield]: https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+[Python-url]: https://www.python.org/
+[JSON-shield]: https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white
+[JSON-url]: https://www.json.org/
+[Raspberry-shield]: https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white
+[Raspberry-url]: https://www.raspberrypi.org/
+[Docker-shield]: https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
+[GCP-shield]: https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=google%20cloud&logoColor=white
+[GCP-url]: https://cloud.google.com/
