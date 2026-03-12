@@ -78,7 +78,7 @@ Essential technologies and hardware components that bring Rebecca to life:
 * [![Docker][Docker-shield]][Docker-url]
 * [![Google Cloud][GCP-shield]][GCP-url]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
@@ -169,22 +169,20 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 
 <!-- LICENSE -->
-## License
 
-Distributed under the Unlicense License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Rebecca Suporte - Rebecca@etec.gov.br
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Project Link: [https://github.com/levi549/Rebecca]((https://github.com/levi549/Rebecca))
 
 
 
@@ -202,7 +200,7 @@ Use this space to list resources you find helpful and would like to give credit 
 * [Font Awesome](https://fontawesome.com)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 
