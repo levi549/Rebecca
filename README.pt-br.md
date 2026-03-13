@@ -23,10 +23,10 @@
   <p align="center">
     Explore a Documentação da Rebecca:
     <br />
-    <a href="https://docs.google.com/document/d/1gp94SfoiHp7q1uv4GKJa6vzyX8j3ONkQ-zVp_nWaJd4/edit?usp=drivesdk"><strong>Explore the docs »</strong></a>
+    <a href="https://docs.google.com/document/d/1gp94SfoiHp7q1uv4GKJa6vzyX8j3ONkQ-zVp_nWaJd4/edit?usp=drivesdk"><strong>Explorar arquivos »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/othneildrew/Best-README-Template">Ver Demo</a>
     &middot;
     <a href="https://wa.me/5519992236931?text=Hi!%20I'd%20like%20to%20report%20a%20bug%20or%20share%20a%20suggestion%20to%20improve%20the%20project.">Report Bug</a>
     &middot;
