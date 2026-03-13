@@ -102,7 +102,7 @@ Siga estes passos para configurar seu ambiente local:
     Abra seu terminal (CMD ou PowerShell) e acesse a pasta onde você extraiu ou clonou o projeto:
    
    ```CMD
-   cd /Directory_Path
+   cd /Caminho_Seu_Diretório 
     ```
    <br>
    
