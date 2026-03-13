@@ -102,7 +102,7 @@ Follow these steps to get your local environment set up:
    Open your terminal (CMD or PowerShell) and go to the folder where you extracted or cloned the project:
    
    ```CMD
-   cd /Directory_Path
+   cd /Your_Directory_Path
     ```
    <br>
    
