@@ -18,15 +18,15 @@
     <img src="images/robo.png" alt="Logo" width="110" height="110">
   </a>
 
-  <h3 align="center">Rebecca - AI Agent for fairs and events!</h3>
+  <h3 align="center">Rebecca - Agente de IA para feiras e eventos!</h3>
 
   <p align="center">
-    Explore Rebecca's documentation:
+    Explore a Documentação da Rebecca:
     <br />
-    <a href="https://docs.google.com/document/d/1gp94SfoiHp7q1uv4GKJa6vzyX8j3ONkQ-zVp_nWaJd4/edit?usp=drivesdk"><strong>Explore the docs »</strong></a>
+    <a href="https://docs.google.com/document/d/1gp94SfoiHp7q1uv4GKJa6vzyX8j3ONkQ-zVp_nWaJd4/edit?usp=drivesdk"><strong>Explorar arquivos »</strong></a>
     <br />
     <br />
-    <a href="">View Demo</a>
+    <a href="https://github.com/othneildrew/Best-README-Template">Ver Demo</a>
     &middot;
     <a href="https://wa.me/5519992236931?text=Hi!%20I'd%20like%20to%20report%20a%20bug%20or%20share%20a%20suggestion%20to%20improve%20the%20project.">Report Bug</a>
     &middot;
@@ -39,12 +39,12 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Sobre o Projeto
 
 
-Rebecca is an AI agent designed to interact, assist, and promote content at tech fairs and events. Powered by an advanced learning model, she assimilates and stores comprehensive information about the event and its hosting institutions, allowing her to answer visitor questions accurately and naturally.
+Rebecca é uma agente de IA projetada para interagir, auxiliar e promover conteúdo em feiras e eventos de tecnologia. Impulsionada por um modelo de aprendizado avançado, ela assimila e armazena informações abrangentes sobre o evento e as instituições anfitriãs, permitindo que responda às perguntas dos visitantes com precisão e naturalidade.
 
-Beyond just a conversational assistant, Rebecca is an active promoter. By moving autonomously throughout the venue, she acts as a dynamic advertising platform, broadcasting announcements through speech and displaying promotional content directly on her physical structure.
+Mais do que uma simples assistente de conversação, Rebecca é uma promotora ativa. Movendo-se autonomamente pelo local, ela atua como uma plataforma de publicidade dinâmica, transmitindo anúncios por voz e exibindo conteúdo promocional diretamente em sua estrutura física.
 
 
 
@@ -52,9 +52,9 @@ Beyond just a conversational assistant, Rebecca is an active promoter. By moving
 
 <br>
 
-### Built With
+### Construido Com
 
-Essential technologies and hardware components that bring Rebecca to life:
+Tecnologias essenciais e componentes de hardware que dão vida a Rebecca:
 
 * [![Python][Python-shield]][Python-url]
 * [![JSON][JSON-shield]][JSON-url]
@@ -66,48 +66,48 @@ Essential technologies and hardware components that bring Rebecca to life:
 
 
 
-## Getting Started
+## Primeiros Passos
 
-Follow these instructions to get a local copy of Rebecca up and running on your PC for development and testing.
+Siga estas instruções para obter uma cópia local do Rebecca, executável em seu PC para desenvolvimento e testes.
 
-### Prerequisites
+### Pré-requisitos
 
-To run Rebecca locally, you will need Python installed on your machine. We also use `uv` for lightning-fast package management.
+Para executar o Rebecca localmente, você precisará ter o Python instalado em sua máquina. Também usamos o `uv` para um gerenciamento de pacotes extremamente rápido.
 
 * **Python**
-  Download and install Python from the official website: [python.org/downloads](https://www.python.org/downloads/)
-  > **⚠️ IMPORTANT FOR WINDOWS USERS:** During the installation, make sure to check the box **"Add Python to PATH"** at the bottom of the installer window. This is required so you can use the `pip` command directly in your terminal.
+  Baixe e instale o Python no site oficial: [python.org/downloads](https://www.python.org/downloads/)
+> **⚠️ IMPORTANTE PARA USUÁRIOS DO WINDOWS:** Durante a instalação, certifique-se de marcar a caixa **"Adicionar Python ao PATH"** na parte inferior da janela do instalador. Isso é necessário para que você possa usar o comando `pip` diretamente no seu terminal.
 
-* **uv (Package Manager)**
-  Once Python is installed and added to your PATH, install `uv` by running the following command in your terminal:
+* **uv (Gerenciador de Pacotes)**
+Depois de instalar o Python e adicioná-lo ao seu PATH, instale o `uv` executando o seguinte comando no seu terminal:
   
   **Windows (CMD/PowerShell):**
   ```cmd
   pip install uv
 <br>
 
-### Installation
+### Instalação
 
-Follow these steps to get your local environment set up:
+Siga estes passos para configurar seu ambiente local:
 
-1. **Clone the repo or download the ZIP**
-   You can either download the repository as a ZIP file and extract it, or clone it using Git:
+1. **Clone o repositório ou baixe o arquivo ZIP**
+    Você pode baixar o repositório como um arquivo ZIP e extraí-lo ou cloná-lo usando o Git:
    
    ```CMD
    
    git clone [https://github.com/levi549/Rebecca.git](https://github.com/levi549/Rebecca.git)
 <br>
 
-2. **Navigate to the project directory**
-   Open your terminal (CMD or PowerShell) and go to the folder where you extracted or cloned the project:
+2. **Navegue até o diretório do projeto**
+    Abra seu terminal (CMD ou PowerShell) e acesse a pasta onde você extraiu ou clonou o projeto:
    
    ```CMD
-   cd /Your_Directory_Path
+   cd /Caminho_Seu_Diretório 
     ```
    <br>
    
- 3. **Running the Project**
-    To start the application, run the following command in your terminal:
+ 3. **Executando o Projeto**
+     Para iniciar o aplicativo, execute o seguinte comando no seu terminal:
 
     ```CMD
      uv run RebeccaMain/RebeccaMain.py
@@ -116,36 +116,35 @@ Follow these steps to get your local environment set up:
 <br>
 <!-- USAGE EXAMPLES -->
 
-## ⚙️ Configuration & Usage
+## ⚙️ Configuração e Uso
 
-To use this project, you will need a **Gemini API Key**. Follow the steps below to get yours and configure the application:
+Para usar este projeto, você precisará de uma **Chave de API Gemini**. Siga os passos abaixo para obter a sua e configurar o aplicativo:
 
-1. Go to [Google AI Studio](https://aistudio.google.com/app/api-keys).
-2. Sign in with your Google account.
-3. Click on the **"Create API key"** button.
-4. Copy the generated token.
-5. Open the `RebeccaMain/Apikey.py` file in your code editor.
-6. Replace `Your_ApiKey` with the API key you just copied.
-
-> **⚠️ Security Warning:** Never commit your API key directly to GitHub! Make sure that `RebeccaMain/Apikey.py` is added to your `.gitignore` file before pushing any changes.
+1. Acesse o [Google AI Studio](https://aistudio.google.com/app/api-keys).
+2. Faça login com sua conta do Google.
+3. Clique no botão **"Criar chave de API"**.
+4. Copie o token gerado.
+5. Abra o arquivo `RebeccaMain/Apikey.py` no seu editor de código.
+6. Substitua `Your_ApiKey` pela chave de API que você acabou de copiar.
+> **⚠️ Aviso de Segurança:** Nunca envie sua chave de API diretamente para o GitHub! Certifique-se de que o arquivo `RebeccaMain/Apikey.py` esteja adicionado ao seu arquivo `.gitignore` antes de enviar qualquer alteração.
 
 
 <br>
 <!-- CONTRIBUTING -->
 
-## 🤝 Contributing
+## 🤝 Contribuindo
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Top contributors:
+1. Faça um fork do projeto
+2. Crie sua branch de funcionalidade (`git checkout -b feature/AmazingFeature`)
+3. Confirme suas alterações (`git commit -m 'Add some AmazingFeature'`)
+4. Enviar para o ramo (`git push origin feature/AmazingFeature`)
+5. Abra uma solicitação de pull request
+   
+### Principais Colaboradores:
 <a href="https://github.com/levi549/Rebecca/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=levi549/Rebecca" />
 </a>
@@ -155,25 +154,25 @@ If you have a suggestion that would make this better, please fork the repo and c
 <!-- LICENSE -->
 
 
-## 📝 License
+## 📝 Licença
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Este projeto está licenciado sob a Licença MIT - veja a [LICENSE](LICENSE) arquivo para obter detalhes.
 
 
 
 <!-- CONTACT -->
-## Contact
+## Contato
 
 Rebecca Suporte - Rebecca@etec.gov.br
 
-Project Link: [https://github.com/levi549/Rebecca]((https://github.com/levi549/Rebecca))
+Link do Projeto: [https://github.com/levi549/Rebecca]((https://github.com/levi549/Rebecca))
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Agradecimentos
 
-We would like to express our deepest gratitude to the people and teams who made this project possible:
+Gostaríamos de expressar nossa mais profunda gratidão às pessoas e equipes que tornaram este projeto possível:
 
 * **[Professor Rafael Cruz](https://www.linkedin.com/in/rafael-cruz-73917212)** * **[Professor Tiago Jesus](https://www.linkedin.com/in/tiagojsouza)** * **Centro Paula Souza (CPS) Robotics Team** ```
 
