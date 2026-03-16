@@ -32,6 +32,10 @@ def limparterm():
     else:
         os.system("clear")
 
+def LimpandoTexto(textoAserLimpo):
+    textolimpo = textoAserLimpo.replace("*", "")
+    return textolimpo
+
 def restart():
     sys.stdout.flush()
     sys.stderr.flush()
@@ -124,11 +128,13 @@ try:
                 print(userMSG)
                 if "rebeca" in userMSG:
                     memoria = lerMem()
-                    resposText = resposta(userMSG)["content"]
+                    RespostaRebecca = resposta(userMSG)["content"]
+                    resposText = LimpandoTexto(RespostaRebecca)
                     try:
                         print(f"Rebecca:{resposText}")
+                        q = queue.Queue()
                         asyncio.run(texttospeech(resposText))
-            
+
                     except Exception as error:
                         print(error)
             else:

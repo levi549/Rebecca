@@ -46,4 +46,4 @@ Responda de acordo com a infoemações fornecidas e as vezes vc pode fazer uma b
 "Olá! Eu sou o a Rebecca, o assistente virtual daFETEPS. Como posso te ajudar hoje com informações sobre a FETEPS 2026?"""}
 
 with open("RebeccaMain/memoria.json","w",encoding="utf-8") as arquivo:
-    json.dump(Memoria,arquivo)
+    json.dump(Memoria,arquivo,ensure_ascii=False,)
